@@ -1,9 +1,10 @@
 class QuotesController < ApplicationController
     before_action :set_quote, only: [:show, :edit, :update, :destroy]
-  
+ 
     def index
-      @quotes = Quote.all
+      @quotes = current_company.quotes.ordered
     end
+   
   
     def show
     end
@@ -13,15 +14,18 @@ class QuotesController < ApplicationController
     end
   
     def create
-        @quote = Quote.new(quote_params)
+      @quote = current_company.quotes.build(quote_params)
     
-        if @quote.save
-          redirect_to quotes_path, notice: "Quote was successfully created."
-        else
-          # Add `status: :unprocessable_entity` here
-          render :new, status: :unprocessable_entity
+      if @quote.save
+        respond_to do |format|
+          format.html {
+           redirect_to quotes_path, notice: "Quote was successfully created." }
+          format.turbo_stream
         end
+      else
+        render :new, status: :unprocessable_entity
       end
+    end
   
     def edit
     end
@@ -36,13 +40,16 @@ class QuotesController < ApplicationController
   
     def destroy
       @quote.destroy
-      redirect_to quotes_path, notice: "Quote was successfully destroyed."
+      respond_to do |format|
+        format.html { redirect_to quotes_path, notice: "Quote was successfully destroyed." }
+        format.turbo_stream
     end
+  end
   
     private
   
     def set_quote
-      @quote = Quote.find(params[:id])
+      @quote = current_company.quotes.find(params[:id])
     end
   
     def quote_params

@@ -1,8 +1,11 @@
 first:
+  company: trk
   name: First quote
 
 second:
+  company: trk
   name: Second quote
 
 third:
+  company: trk
   name: Third quote
