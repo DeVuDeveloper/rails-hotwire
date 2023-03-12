@@ -7,6 +7,7 @@ class QuotesController < ApplicationController
    
   
     def show
+      @line_item_dates = @quote.line_item_dates.ordered
     end
   
     def new
