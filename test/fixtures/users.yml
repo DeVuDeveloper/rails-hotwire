@@ -15,6 +15,6 @@ manager:
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
 
 eavesdropper:
-  company: pwc
-  email: eavesdropper@pwc.com
+  company: ing
+  email: manager@ing.com
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>

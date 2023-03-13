@@ -2,9 +2,9 @@ en:
   simple_form:
     placeholders:
       quote:
-        name: Quote
+        name: Category
       line_item:
-        name: Item
+        name: Product
         description: Description (optional)
         quantity: 1
         unit_price: $100.00
@@ -22,11 +22,11 @@ en:
   helpers:
     submit:
       quote:
-        create: Create quote
-        update: Update quote
+        create: Create category
+        update: Update category
       line_item:
-        create: Create item
-        update: Update item
+        create: Create product
+        update: Update product
       line_item_date:
         create: Create date
         update: Update date

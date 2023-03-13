@@ -1,11 +1,19 @@
-first:
-  company: trk
-  name: First quote
+meat:
+  company: dm
+  name: Meat
 
-second:
-  company: trk
-  name: Second quote
+fruit:
+  company: dm
+  name: Fruit
 
-third:
-  company: trk
-  name: Third quote
+beverages:
+  company: dm
+  name: Beverages
+
+bread:
+  company: dm
+  name: Bread
+
+milk:
+  company: dm
+  name: Milk
