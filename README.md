@@ -1,39 +1,41 @@
-# Inventory managment
+# Inventory management
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/DeVuDeveloper/jekyll-tailwind.">
-    <img src="./assets/images/author/logo.png" alt="Logo" width="200" height="150">
+  <a href="https://github.com/DeVuDeveloper/rails-hotwire">
+    <img src="app/assets/images/logo.jpeg" alt="Logo" width="200" height="150">
   </a>
 
-  <h1 align="center">Playstation 5</h1>
+  <h1 align="center">Inventory management</h1>
 
   <p align="center">
    
-  <a href="https://github.com/DeVuDeveloper/jekyll-tailwind.#readme"><strong>Explore the docs*»</strong></a>
+  <a href="https://github.com/DeVuDeveloper/rails-hotwire.git.#readme"><strong>Explore the docs*»</strong></a>
     <br />
     <br />
     ·
-    <a href="https://github.com/DeVuDeveloper/jekyll-tailwind./issues/1">Report Bug</a>
+    <a href="https://github.com/DeVuDeveloper/rails-hotwire.git./issues/1">Report Bug</a>
     ·
-    <a href="https://github.com/DeVuDeveloper/jekyll-tailwind./issues/1">Request Feature</a>
+    <a href="https://github.com/DeVuDeveloper/rails-hotwire.git./issues/1">Request Feature</a>
   </p>
 </div>
 
 ## Diagram
 
-## ![Screenshot](./assets/images/author/screenshot.jpg)
+## ![Screenshot](app/assets/images//screenshot.jpg)
 
 
 ## Description 🏗️
-Playstation 5 is a mini project made by Jekyll with Tailwind CSS. Project is deployed on Netlify, also netlify csm is installed.
-User can edit all web pages and posts with form or markdown.
+Inventory managenet is a very useful application for storing your inventory.
+The application was built with Ruby on rails and Hotwire. All links are intercepted with turbo rails and the user can add and edit inventory on the same page where the inventory is located thanks to the magic of hotwire.
+The user can add an inventory category and add products for a specific category on specific dates. The total value of all products for a specific date for a specific category is also added.
+The software is great for accountants.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Live Demo
 
-([Live preview](https://jekill-practice.netlify.app/))
+([Live preview]())
 
 ## Getting Started 🏁
 
@@ -61,13 +63,13 @@ You will be needing:
 ### Clone this repository
 
 ```bash
-git clone https://github.com/DeVuDeveloper/jekyll-tailwind.git
+git clone https://github.com/DeVuDeveloper/rails-hotwire.git
 ```
 
 ### Move into the cloned directory with
 
 ```bash
-cd jekyll-tailwind
+cd rails-hotwire
 
 ```
 
@@ -76,25 +78,58 @@ cd jekyll-tailwind
 Install gems with:
 
 ```bash
-bundle install
+bin/rails/setup
 ```
+
+seed the database with:
+
+```bash
+bin/rails db:seed
+```
+
+### Run linter
+
+```bash
+rubocop .
+```
+
+#### Auto-correct
+
+In auto-correct mode, RuboCop linters offenses will be automatically fixed:
+
+For rubocop:
+
+```bash
+rubocop -A
+```
+
+**<div>OR</div>**
+
+```bash
+rubocop --auto-correct-all
+```
+
 ### Run Project
 
 Start server with:
 
 ```bash
-bundle exec jekyll serve --livereload
+bin/dev
+```
+
+<div align="center">OR</div>
+
+```bash
+rails server -p 3000
 ```
 
 This will start a server at:
 
 ```bash
-localhost:4000
+localhost:3000
 ```
 
 You can paste or type it on url bar
-
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,8 +138,15 @@ You can paste or type it on url bar
 ### Roadmap
 
 - [x] Set up the repository/repositories on GitHub and use Gitflow.
-- [x] Create new Jekyll app
-- [x] Installed Tailwind CSS
+- [x] Create new rails app
+- [x] A simple CRUD controller with Rails
+- [x] Turbo Drive
+- [x] Turbo Frames and Turbo Stream templates
+- [x] Turbo Streams and security
+- [x] Flash messages with Hotwire
+- [x] Two ways to handle empty states with Hotwire
+- [x] Another CRUD controller with Turbo Rails
+- [x] Adding a category total with Turbo Frames
 - [x] Create README
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -115,9 +157,10 @@ You can paste or type it on url bar
 
 |     | Languages                                                                                                                                                                                                                                                                                                                  |     |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-|     | ![Ruby](https://img.shields.io/badge/-Ruby-000000?style=flat&logo=ruby&logoColor=red) |
+|     | ![Ruby](https://img.shields.io/badge/-Ruby-000000?style=flat&logo=ruby&logoColor=red)![Ruby on Rails](https://img.shields.io/badge/-Ruby_on_Rails-000000?style=flat&logo=ruby-on-rails&logoColor=blue)![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) |
 
 <div align="center">
+
 
 |     | Tools 🛠️                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |     |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
@@ -152,7 +195,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - Push to the Branch (git push origin feature/AmazingFeature)
 - Open a Pull Request
 
-Feel free to check the [issues page](https://github.com/DeVuDeveloper/jekyll-tailwind./issues/1).
+Feel free to check the [issues page](https://github.com/DeVuDeveloper/rails-hotwire/issues/1).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
