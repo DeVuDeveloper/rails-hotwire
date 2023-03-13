@@ -26,7 +26,7 @@
 
 
 ## Description 🏗️
-Inventory managenet is a very useful application for storing your inventory.
+Inventory management is a very useful application for storing your inventory.
 The application was built with Ruby on rails and Hotwire. All links are intercepted with turbo rails and the user can add and edit inventory on the same page where the inventory is located thanks to the magic of hotwire.
 The user can add an inventory category and add products for a specific category on specific dates. The total value of all products for a specific date for a specific category is also added.
 The software is great for accountants. Different companies can use application thanks for turbo security.
