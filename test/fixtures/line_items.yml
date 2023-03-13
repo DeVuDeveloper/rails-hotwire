@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+cow_milk:
+  line_item_date: today
+  name: Cow's milk
+  description: It's naturally rich in calcium, B vitamins
+  quantity: 150
+  unit_price: 2
+
+organic_milk:
+  line_item_date: today
+  name: Organic milk
+  description: Healthy omega-3 fatty acids
+  quantity: 75
+  unit_price: 3
+
+cow_milk2:
+  line_item_date: next_week
+  name: Cow's milk
+  description: It's naturally rich in calcium, B vitamins
+  quantity: 200
+  unit_price: 2
+
+organic_milk2:
+  line_item_date: next_week
+  name: Organic milk
+  description: Healthy omega-3 fatty acids
+  quantity: 100
+  unit_price: 3

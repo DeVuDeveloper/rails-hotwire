@@ -1,0 +1,19 @@
+meat:
+  company: dm
+  name: Meat
+
+fruit:
+  company: dm
+  name: Fruit
+
+beverages:
+  company: dm
+  name: Beverages
+
+bread:
+  company: dm
+  name: Bread
+
+milk:
+  company: dm
+  name: Milk
