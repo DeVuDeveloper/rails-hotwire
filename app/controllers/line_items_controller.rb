@@ -8,17 +8,17 @@ class LineItemsController < ApplicationController
     end
   
     def create
-        @line_item = @line_item_date.line_items.build(line_item_params)
-    
-        if @line_item.save
-          respond_to do |format|
-            format.html { redirect_to quote_path(@quote), notice: "Item was successfully created." }
-            format.turbo_stream { flash.now[:notice] = "Item was successfully created." }
-          end
-        else
-          render :new, status: :unprocessable_entity
+      @line_item = @line_item_date.line_items.build(line_item_params)
+  
+      if @line_item.save
+        respond_to do |format|
+          format.html { redirect_to quote_path(@quote), notice: "Item was successfully created." }
+          format.turbo_stream { flash.now[:notice] = "Item was successfully created." }
         end
+      else
+        render :new, status: :unprocessable_entity
       end
+    end
 
     def edit
     end
