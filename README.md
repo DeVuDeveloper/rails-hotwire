@@ -10,13 +10,13 @@
 
   <p align="center">
    
-  <a href="https://github.com/DeVuDeveloper/rails-hotwire.git.#readme"><strong>Explore the docs*»</strong></a>
+  <a href="https://github.com/DeVuDeveloper/rails-hotwire.git/#readme"><strong>Explore the docs*»</strong></a>
     <br />
     <br />
     ·
-    <a href="https://github.com/DeVuDeveloper/rails-hotwire.git./issues/1">Report Bug</a>
+    <a href="https://github.com/DeVuDeveloper/rails-hotwire/issues/1">Report Bug</a>
     ·
-    <a href="https://github.com/DeVuDeveloper/rails-hotwire.git./issues/1">Request Feature</a>
+    <a href="https://github.com/DeVuDeveloper/rails-hotwire/issues/1">Request Feature</a>
   </p>
 </div>
 
